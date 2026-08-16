@@ -1,0 +1,52 @@
+---
+layout: default
+title: "Code"
+permalink: /code/
+description: "Research code and reproducibility repositories by Joonyoung Kim."
+---
+
+{% assign p = site.data.profile %}
+{% assign repos = site.data.code %}
+
+<header class="page-header">
+  <h1>Code</h1>
+  <p>Research code and reproducibility repositories associated with publications and projects.</p>
+</header>
+
+{% if repos and repos.size > 0 %}
+  <div class="code-grid">
+    {% for repo in repos %}
+      <article class="code-card">
+        <div>
+          <h2>{{ repo.title }}</h2>
+          <p>{{ repo.description }}</p>
+
+          {% if repo.publication and repo.publication != "" %}
+            <p class="code-related"><strong>Related publication:</strong> {{ repo.publication }}</p>
+          {% endif %}
+
+          <div class="tag-row">
+            {% if repo.language and repo.language != "" %}
+              <span class="tag">{{ repo.language }}</span>
+            {% endif %}
+            {% for tag in repo.tags %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
+
+        <a class="inline-link" href="{{ repo.github }}" target="_blank" rel="noopener noreferrer">
+          View repository →
+        </a>
+      </article>
+    {% endfor %}
+  </div>
+{% else %}
+  <div class="empty-state">
+    <strong>Repositories will be added as they are released.</strong>
+    <p>For now, you can view my GitHub profile.</p>
+    <a class="primary-button" href="{{ p.github_url }}" target="_blank" rel="noopener noreferrer">
+      GitHub Profile
+    </a>
+  </div>
+{% endif %}

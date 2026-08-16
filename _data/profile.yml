@@ -1,0 +1,36 @@
+# ------------------------------------------------------------
+# Edit this file when your affiliation or profile links change.
+# Leave a URL blank ("") to hide that link automatically.
+# ------------------------------------------------------------
+
+name: "Joonyoung Kim"
+initials: "JK"
+
+# Current status as of 2026-08.
+role: "B.S. Student in Transportation System Engineering"
+secondary_role: "Incoming M.S. Student in Transportation Engineering · Mar. 2027"
+
+location: "Suwon, South Korea"
+university: "Ajou University"
+
+lab_name: "EMI (Incoming)"
+lab_url: "https://sites.google.com/view/euijinkim"
+
+email: "jjymmm@ajou.ac.kr"
+
+github_username: "joonyoungk"
+github_url: "https://github.com/joonyoungk"
+
+linkedin_url: "https://www.linkedin.com/in/준영-김-373673326"
+
+# Add these later when available.
+google_scholar_url: ""
+orcid_url: ""
+
+# Profile photo:
+# 1) Upload your photo to assets/images/profile.jpg
+# 2) Change the value below to "/assets/images/profile.jpg"
+# Leave blank to show the clean "JK" placeholder.
+image: ""
+
+cv_pdf: "/files/Joonyoung_Kim_CV.pdf"

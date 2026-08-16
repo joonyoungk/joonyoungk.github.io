@@ -1,0 +1,86 @@
+---
+layout: default
+title: "CV"
+permalink: /cv/
+description: "Curriculum vitae of Joonyoung Kim."
+---
+
+{% assign p = site.data.profile %}
+{% assign cv = site.data.cv %}
+
+<header class="page-header cv-header">
+  <div>
+    <h1>Curriculum Vitae</h1>
+    <p>Education, research experience, publications, skills, and scholarships.</p>
+  </div>
+
+  <a class="primary-button" href="{{ p.cv_pdf | relative_url }}" target="_blank" rel="noopener noreferrer">
+    Download PDF
+  </a>
+</header>
+
+<section class="cv-section">
+  <h2>Education</h2>
+  {% include education-list.html %}
+</section>
+
+<section class="cv-section">
+  <h2>Research Experience</h2>
+
+  <div class="cv-list">
+    {% for item in cv.research_experience %}
+      <article class="cv-item">
+        <div class="cv-item-heading">
+          <div>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.context }}</p>
+          </div>
+          <span>{{ item.dates }}</span>
+        </div>
+
+        <ul>
+          {% for bullet in item.bullets %}
+            <li>{{ bullet }}</li>
+          {% endfor %}
+        </ul>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="cv-section">
+  <h2>Publications</h2>
+  {% include publication-list.html %}
+</section>
+
+<section class="cv-section">
+  <h2>Skills</h2>
+
+  <div class="compact-list">
+    {% for item in cv.skills %}
+      <div class="compact-row">
+        <strong>{{ item.category }}</strong>
+        <span>{{ item.items }}</span>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="cv-section">
+  <h2>Scholarships</h2>
+
+  <div class="cv-list">
+    {% for item in cv.scholarships %}
+      <article class="cv-item scholarship-item">
+        <div class="cv-item-heading">
+          <div>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.institution }}</p>
+          </div>
+          <span>{{ item.dates }}</span>
+        </div>
+        <p class="item-note">{{ item.note }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>

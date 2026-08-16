@@ -1,0 +1,10 @@
+title: "Joonyoung Kim"
+description: "Academic website of Joonyoung Kim, Ajou University."
+url: "https://joonyoungk.github.io"
+baseurl: ""
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - README.md

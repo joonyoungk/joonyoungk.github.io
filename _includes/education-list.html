@@ -1,0 +1,14 @@
+<div class="timeline-list">
+  {% for item in site.data.cv.education %}
+  <article class="timeline-item">
+    <div class="timeline-main">
+      <h3>{{ item.degree }} · {{ item.institution }}</h3>
+      <p>{{ item.program }}</p>
+      {% if item.note and item.note != "" %}
+        <p class="item-note">{{ item.note }}</p>
+      {% endif %}
+    </div>
+    <div class="timeline-date">{{ item.dates }}</div>
+  </article>
+  {% endfor %}
+</div>

@@ -1,0 +1,52 @@
+education:
+  - degree: "M.S."
+    institution: "Ajou University"
+    program: "Convergence of Data.Network.AI – Transportation Engineering"
+    dates: "Mar. 2027 –"
+    note: "Incoming"
+
+  - degree: "B.S."
+    institution: "Ajou University"
+    program: "Transportation System Engineering"
+    dates: "Mar. 2021 – Feb. 2027"
+    note: "Expected · Minor in Future Car · GPA: 4.05/4.5"
+
+research_experience:
+  - title: "Demand Forecasting Model for Demand-Responsive Transit"
+    context: "Paran Semester, Industry-Proposed Project"
+    dates: "Sep. 2025 – Dec. 2025"
+    bullets:
+      - "Developed a demand forecasting model for demand-responsive transit using Hierarchical Bayesian gamma regression."
+      - "Manuscript accepted for publication in the Journal of Korean Society of Transportation."
+
+  - title: "Correlation Analysis between Micromobility and Conventional Public Transit"
+    context: "Undergraduate course: Traffic Demand Forecasting Project"
+    dates: "Mar. 2025 – Jun. 2025"
+    bullets:
+      - "Applied Bayesian structural time-series causal impact analysis to examine the relationship between micromobility usage and public transit ridership."
+      - "Interpreted the results in relation to land-use characteristics and public transit accessibility."
+
+  - title: "Suwon Smart City Project"
+    context: "Undergraduate course: Smart Mobility Project"
+    dates: "Sep. 2024 – Dec. 2024"
+    bullets:
+      - "Conducted traffic analysis using the SUMO simulator."
+      - "Proposed traffic mitigation strategies for congestion on Maesan-ro in Suwon."
+
+skills:
+  - category: "Software & Tools"
+    items: "Python (PyTorch, Pandas), SUMO, VISSIM"
+
+  - category: "Languages"
+    items: "Korean (Native), English (Advanced)"
+
+scholarships:
+  - title: "Full-Tuition Merit Scholarship"
+    institution: "Ajou University"
+    dates: "2021 – Present"
+    note: "Awarded as the top-ranked admitted student."
+
+  - title: "Dean’s Recommendation Scholarship"
+    institution: "Graduate School of Transportation and Mobility, Ajou University"
+    dates: "Fall 2025 – Spring 2026"
+    note: "Awarded to an undergraduate student upon the Dean’s recommendation."

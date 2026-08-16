@@ -1,0 +1,28 @@
+# ------------------------------------------------------------
+# Add new papers by copying the block below.
+# Buttons are shown only when the corresponding URL is filled.
+# ------------------------------------------------------------
+
+- year: 2026
+  title: "A Hierarchical Bayesian Model for Estimating Nationwide Demand for Demand-Responsive Transit at a Fine Spatial Resolution"
+  authors:
+    - name: "Kim, J. Y."
+      me: true
+    - name: "Kim, G. H."
+      me: false
+    - name: "Kim, D. C."
+      me: false
+    - name: "An, H. S."
+      me: false
+    - name: "Kang, T. S."
+      me: false
+    - name: "Kim, E. J."
+      me: false
+  venue: "Journal of Korean Society of Transportation"
+  status: "Accepted"
+
+  # Fill these later if/when available.
+  pdf: ""
+  doi: ""
+  code: ""
+  project: ""
